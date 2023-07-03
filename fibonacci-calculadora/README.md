@@ -15,6 +15,10 @@ Atenção: Inicie o servidor Web para que o resultado desse script seja exibido.
 ### O que foi feito:
 Este é um projeto que inclui uma calculadora simples e uma função para exibir a sequência de Fibonacci. O projeto utiliza HTML, PHP  e Docker para executar um servidor web localmente.
 
+<p align="center">
+  <img src="funcionamento.gif" alt="Funcionamento" />
+</p>
+
 ## Instruções
 
 Siga as etapas abaixo para configurar e executar o projeto localmente.
