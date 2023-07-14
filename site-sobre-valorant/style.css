@@ -1,0 +1,260 @@
+
+@font-face {
+    font-family: valorant;
+    src: url('Valorant Font.ttf');
+}
+
+body {
+
+	background-color: rgba(0,0,0,0.9);
+
+	color: #ff4654;
+
+	font-family: valorant;
+
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+}
+
+.titulo_valorant {
+
+	margin: 2vh 1vw 2vh 1vw;
+	font-size: 5em;
+
+}
+
+.fundo {
+	content: "";
+	background: url(images/valorant-arco-flexa.gif);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+#menuControl {
+	display: none;
+}
+
+nav {
+
+	display: flex;
+	color: white;
+	font-size: 1.6vw;
+	background-color:#000;
+
+	width: 100vw;
+	height: 20vh;
+
+}
+
+.nav-text-menu {
+	display: none;
+}
+
+nav > ul {
+
+	width: 100vw;
+	list-style-type: none;
+	display: table-row;
+
+}
+
+nav > ul > li {
+
+	flex: 1;
+
+	display: table-cell;
+
+	width: 20vw;
+	height: 12vh;
+	line-height: 12vh;
+
+	text-align: center;
+
+}
+
+nav > ul li:hover a {
+	color: #ff4654;
+}
+
+nav > ul > li > a {
+	color: inherit;
+	text-decoration: none;
+}
+
+section {
+
+	width: 100vw;
+	position: ;
+	left: 0;
+	right: 0;
+
+}
+
+a {
+	color: white;
+}
+
+a:hover, a:active {
+	color: #ff4654;
+}
+
+article {
+
+	background-color: #0000009e;
+	width: 80vw;
+	position:relative;
+	left: 10vw;
+	right: 0;
+	padding: 5vh 1vw 5vh 1vw;
+	margin: 5vh 1vw 5vh 1vw;
+}
+
+article > hr {
+
+	color: rgba(0, 0, 0, 0.13);
+}
+
+.article_title {
+
+	font-size: 2em;
+	color: rgb(157, 36, 36);
+
+}
+
+.article_content {
+
+	font-family: Tungsten-Bold,arial,georgia,sans-serif;
+	font-size: 1.3em;
+	color: rgb(100, 100, 100);
+
+}
+
+.article_content img {
+
+	width: 50vw;
+	
+}
+
+footer {
+	margin-top: 5vh;
+	background-color: #333;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+
+	position: relative;
+	top:0vh;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+@media (max-width: 500px) {
+
+	.titulo_valorant {
+
+		font-size: 13vw;
+
+	}
+
+	#menuControl {
+
+		display: none;
+		opacity: 0;
+		height: 20vh;
+		position: fixed;
+		top: 45vh;
+		right: 2vw;
+		z-index: 5;
+
+	}
+
+	nav {
+
+		display: inline;
+		color: white;
+		font-size: 3vw;
+		background-color:#000;
+
+		width: 26vw;
+		height: 100vh;
+		position: fixed;
+		top: 0vh;
+		bottom: 0vh;
+		right: -22vw;
+
+		padding-left: 3vw;
+
+		z-index:4;
+	}
+
+	.nav-text-menu {
+
+		display:block;
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		transform: rotate(180deg);
+		position: fixed;
+		top: 45vh;
+		right: 3vw;
+
+	}
+
+	nav:hover, #menuControl:checked + nav {
+		right: 0vw;
+		padding-right: auto;
+		padding-left: 1vw;
+	}
+
+       	#menuControl:checked + nav > ul {
+		display: inline;
+	}
+
+	nav > ul {
+
+		list-style-type: none;
+
+		display: none;
+
+		padding-left: 1vw;
+	}
+
+	nav > ul > li {
+
+		flex: 1;
+
+		display: block;
+
+		height: 4vh;
+		line-height: 4vh;
+
+	}
+
+	nav > ul li:hover a {
+		color: #ff4654;
+		text-decoration: none;
+	}
+
+	nav > ul > li > a {
+		
+		color: inherit;
+		text-decoration: none;
+
+	}
+
+}
